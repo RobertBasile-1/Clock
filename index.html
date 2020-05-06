@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" type = "text/css" href="style.css">
+   
+    <script src = "main.js"></script>
+</head>     
+
+    <body>
+        <div id = "box">
+            <h1 id = "msg" style = "text-align: center;">WELCOME</h1>
+            <button id = "Enter"  onclick = "doesBoth('box')">GET STARTED</button>
+        </div>
+        
+        <div id = "curr_time"  onload = "currentTime()"></div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button onclick = "ClockBtn()"  type="button" id = "Clock" class="btn btn-secondary">Clock</button>
+            <button onclick = "SwitchToTimer()" type="button" id = "Timer" class="btn btn-secondary">Timer</button>
+          </div>
+
+    </body>
+
+</html>
