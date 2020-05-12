@@ -1,45 +1,41 @@
 
 body{
-	
-    
     background-color : #EEF2F7;
 	min-width:1250px;
 	height: 100%;
 	margin: 0;
-	overflow-x: hidden; 
-	overflow-y: hidden; 
-	
 	scroll-behavior: smooth;
 }
 #msg { 
 
-     color : white;
+    color : white;
     font-weight : 900;
     font-size: 150px; 
-    top: 20%;
+    top: 10%;
     left : 50%;
-    transform: translate(-50%,-20%);
-    position: absolute;
-    margin:auto;
-    visibility: visible;
+    transform: translate(-50%,-10%);
+    position: relative;
+    display : block;
+    text-align: center;
+
 }
 #Enter {
-    top : 270px;
-    left:390px;
+
+    top : 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
     height: 50px;
     width : 220px;
     position: relative;
-    display: inline-block;
     font-family: "ariel" sans-serif;
-    border : 1px;
+    border: 1px;
     color: black;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    visibility: visible;
     transition: .4s ease-in-out;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
@@ -47,24 +43,25 @@ body{
 }
 
 #Enter:hover {background-color: #00ffcc;}
+
 #box { 
     height: 400px;
     width: 1000px;
     background: linear-gradient(to bottom, #0099ff 0%, #00ffcc 100%);
     position:absolute;
+    visibility: visible;
     top:250px;
     left:0;
     right:0;
     margin:auto;
     border-radius:20px; 
     box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-        0 100px 80px rgba(0, 0, 0, 0.12)
-;
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .btn-outline-warning {
     height: 75px;
@@ -86,7 +83,6 @@ body{
     width: 200px;
     left : 136px;
     top : 70px;
-    display : inline-block;
     position: relative;
 
 }
@@ -102,14 +98,15 @@ body{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    visibility: hidden;
     position : absolute;
     left : 50%;
     top : 50%;
     transform: translate(-50%,-50%); 
-    display: inline;
+    display: block;
     transition: .3s;
     padding: 15px 15px 15px 15px;
-    visibility: hidden;
+   
 }
 #box_timer{
     font-family: 'Orbitron', sans-serif;
