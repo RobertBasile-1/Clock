@@ -26,15 +26,18 @@ function toggle_visibility(id) {
   if (e.style.display == "block") e.style.display = "none";
   else e.style.display = "block";
 }
-function showTwoButtons() {
-  document.getElementById("Clock").style.visibility = "visible";
-  document.getElementById("Timer").style.visibility = "visible";
+function showThreeButtons() {
+ 
+  document.getElementsByClassName("btn-secondary")[0].style.display = "block";
+  document.getElementsByClassName("btn-secondary")[1].style.display = "block";
+  document.getElementsByClassName("btn-secondary")[2].style.display = "block";
+
 }
 function hideText() {
-  document.getElementById("msg").style.visibility = "hidden";
+  document.getElementById("msg").style.display = "none";
 }
 function hideButton() {
-  document.getElementById("Enter").style.visibility = "hidden";
+  document.getElementById("Enter").style.display = "none";
 }
 function showTime() {
   document.getElementById("curr_time").style.display = "block";
@@ -73,7 +76,7 @@ getStarted.addEventListener("click", function () {
   hideButton();
   currentTime();
   showTime();
-  showTwoButtons();
+  showThreeButtons();
   hideText();
 });
 
