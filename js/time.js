@@ -62,11 +62,12 @@ function update(k) {
   }
 }
 
-var clockbtn = document.getElementById("Clock");
-var timer = document.getElementById("Timer");
-var getStarted = document.getElementById("Enter");
-var boxing = document.getElementById("msg");
-var stopwatch = new myCounter();
+let clockbtn = document.getElementById("Clock");
+let timation = document.getElementById("Timer");
+let getStarted = document.getElementById("Enter");
+let boxing = document.getElementById("msg");  
+
+
 getStarted.addEventListener("click", function () {
   slideUp("box");
   hideButton();
@@ -76,12 +77,11 @@ getStarted.addEventListener("click", function () {
   hideText();
 });
 
-timer.addEventListener("click", function () {
+timation.addEventListener("click", function () {
   hideTime();
   showTimer();
 });
 clockbtn.addEventListener("click", function () {
   hideTimer();
-  showTime();
-  stopwatch.reset();
+  showTime(); 
 });
