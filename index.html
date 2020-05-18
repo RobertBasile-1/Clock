@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head> 
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-    <link rel="stylesheet" type = "text/css" href="style.css">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-    
-  
-    
-    
-</head>     
+  <body>
+    <!--Welcome message-->
+    <div id="box">
+      <h1 id="msg">WELCOME</h1>
+      <button id="Enter">GET STARTED</button>
+    </div>
+    <!--End of welcome message-->
 
-    <body>
+    <!--Display time-->
 
-        <!--Welcome message-->
-        <div id = "box">
-            <h1 id = "msg">WELCOME</h1>
-            <button id = "Enter">GET STARTED</button>
-        </div>
-        <!--End of welcome message-->
+    <div id="curr_time"></div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" id="Clock" class="btn btn-secondary">Clock</button>
 
+      <button type="button" id="Timer" class="btn btn-secondary">Timer</button>
+    </div>
 
-        <!--Display time-->
-       
-        <div id = "curr_time"></div>
-        <div class="btn-group" role="group" aria-label="Basic example">
+    <!--End of Display time-->
 
-            <button type="button" id = "Clock" class="btn btn-secondary">Clock</button>
+    <!--Start of StopWatch-->
+    <div id="box_timer">
+      <button id="reset" type="button" class="btn btn-outline-warning">
+        RESET!
+      </button>
+      <button id="toggle" type="button" class="btn btn-outline-success">
+        START!
+      </button>
+      <button id="untoggle" type="button" class="btn btn-outline-danger">
+        STOP!
+      </button>
+      <h1 id="timing">00 : 00 . 000</h1>
+    </div>
+    <!--End of StopWatch-->
+  </body>
 
-            <button type="button" id = "Timer" class="btn btn-secondary">Timer</button>
-          </div>
-        
-        <!--End of Display time-->
-
-
-        <!--Start of StopWatch-->
-        <div id = "box_timer">
-            
-            
-            <button id = "reset" type="button" class="btn btn-outline-warning">RESET!</button>
-            <button id = "toggle" type ="button" class="btn btn-outline-success">START!</button>
-            <button id = "untoggle" type = "button" class="btn btn-outline-danger">STOP!</button>
-            <h1 id = "timing"> 00 : 00 . 000 </h1>
-        
-          
-        </div>  
-        <!--End of StopWatch-->
-    </body>
-    
-    <!---->
-    <script src = "js/time.js"></script>
-    <script src = "js/stopwatch.js"></script>
-    <script src = "js/main.js"></script>
-
-
+  <!---->
+  <script src="js/time.js"></script>
+  <script src="js/stopwatch.js"></script>
+  <script src="js/main.js"></script>
 </html>

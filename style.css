@@ -1,152 +1,144 @@
-
-body{
-    background-color : #EEF2F7;
-	min-width:1250px;
-	height: 100%;
-	margin: 0;
-	scroll-behavior: smooth;
+body {
+  background-color: #eef2f7;
+  min-width: 1250px;
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
 }
-#msg { 
-
-    color : white;
-    font-weight : 900;
-    font-size: 150px; 
-    top: 10%;
-    left : 50%;
-    transform: translate(-50%,-10%);
-    position: relative;
-    display : block;
-    text-align: center;
-
+#msg {
+  color: white;
+  font-weight: 900;
+  font-size: 150px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  position: relative;
+  display: block;
+  text-align: center;
 }
 #Enter {
-
-    top : 20%;
-    left: 50%;
-    transform: translate(-50%,-20%);
-    height: 50px;
-    width : 220px;
-    position: relative;
-    font-family: "ariel" sans-serif;
-    border: 1px;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: .4s ease-in-out;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    
-    
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  height: 50px;
+  width: 220px;
+  position: relative;
+  font-family: "ariel" sans-serif;
+  border: 1px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#Enter:hover {background-color: #00ffcc;}
+#Enter:hover {
+  background-color: #00ffcc;
+}
 
-#box { 
-    height: 400px;
-    width: 1000px;
-    background: linear-gradient(to bottom, #0099ff 0%, #00ffcc 100%);
-    position:absolute;
-    visibility: visible;
-    top:250px;
-    left:0;
-    right:0;
-    margin:auto;
-    border-radius:20px; 
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+#box {
+  height: 400px;
+  width: 1000px;
+  background: linear-gradient(to bottom, #0099ff 0%, #00ffcc 100%);
+  position: absolute;
+  visibility: visible;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .btn-outline-warning {
-    height: 75px;
-    width : 200px;
-    top : -140px;
-    left : 565px;
-    position: relative;
+  height: 75px;
+  width: 200px;
+  top: -140px;
+  left: 565px;
+  position: relative;
 }
 
 .btn-outline-success {
-    height: 75px;
-    width : 200px;
-    top : -40px;
-    left : 350px;
-    position: relative;
+  height: 75px;
+  width: 200px;
+  top: -40px;
+  left: 350px;
+  position: relative;
 }
-.btn-outline-danger{
-    height: 75px;
-    width: 200px;
-    left : 136px;
-    top : 70px;
-    position: relative;
-
+.btn-outline-danger {
+  height: 75px;
+  width: 200px;
+  left: 136px;
+  top: 70px;
+  position: relative;
 }
-#timing { 
-    top : -50px;
-    position :relative;
+#timing {
+  top: -50px;
+  position: relative;
 }
-#curr_time { 
-    font-family: 'Orbitron', sans-serif;
-    color:  #6640f2
-    /*#66ff99*/;
-    font-size: 56px;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    visibility: hidden;
-    position : absolute;
-    left : 50%;
-    top : 50%;
-    transform: translate(-50%,-50%); 
-    display: block;
-    transition: .3s;
-    padding: 15px 15px 15px 15px;
-   
+#curr_time {
+  font-family: "Orbitron", sans-serif;
+  color: #6640f2 /*#66ff99*/;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /*visibility: hidden;*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  transition: 0.3s;
+  padding: 15px 15px 15px 15px;
 }
-#box_timer{
-    font-family: 'Orbitron', sans-serif;
-    color:  #6640f2;
-    font-size: 56px;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    position : absolute;
-    left : 50%;
-    top : 50%;
-    transform: translate(-50%,-50%); 
-    display: inline;
-    transition: .3s;
-    padding: 15px 15px 15px 15px;
-    visibility: hidden;
+#box_timer {
+  font-family: "Orbitron", sans-serif;
+  color: #6640f2;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: 0.3s;
+  padding: 15px 15px 15px 15px;
 }
 .btn-secondary {
-    height: 50px;  
-    width: 150px;
-    visibility: hidden;
+  height: 50px;
+  width: 150px;
+  visibility: hidden;
 }
 #Clock {
-    visibility: hidden;
-    display : inline;
+  visibility: hidden;
+  display: inline;
 }
 #Timer {
-    visibility: hidden;
-    display: inline;
+  visibility: hidden;
+  display: inline;
 }
 
-#curr_time:hover{
-    text-shadow : 0px 0px 0 rgb(208,138,28),1px 1px 0 rgb(165,123,26),2px 2px 0 rgb(242,185,100),3px 3px 0 rgb(227,167,187),4px 4px 0 rgb(182,129,63),5px 5px 0 rgb(161,117,50),6px 6px 0 rgb(144,103,39),7px 7px 0 rgb(130,91,31),8px 8px 0 
-    rgb(120,83,25),9px 9px 0 rgb(108,73,20),10px 10px 0 rgb(93,63,13),11px 11px 0 rgb(60,54,12),12px 12px 0
-    rgb(63,41,8),13px 13px 0;
+#curr_time:hover {
+  text-shadow: 0px 0px 0 rgb(208, 138, 28), 1px 1px 0 rgb(165, 123, 26),
+    2px 2px 0 rgb(242, 185, 100), 3px 3px 0 rgb(227, 167, 187),
+    4px 4px 0 rgb(182, 129, 63), 5px 5px 0 rgb(161, 117, 50),
+    6px 6px 0 rgb(144, 103, 39), 7px 7px 0 rgb(130, 91, 31),
+    8px 8px 0 rgb(120, 83, 25), 9px 9px 0 rgb(108, 73, 20),
+    10px 10px 0 rgb(93, 63, 13), 11px 11px 0 rgb(60, 54, 12),
+    12px 12px 0 rgb(63, 41, 8), 13px 13px 0;
 }
-.btn-group { 
-    position: absolute;
-    top : 65%;
-    left : 50%;
-    transform: translate(-50%,-65%);
-    
+.btn-group {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
 }
