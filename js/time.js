@@ -21,40 +21,25 @@ function slideUp(el) {
   elem.style.height = "0px";
 }
 
-function toggle_visibility(id) {
-  var e = document.getElementById(id);
-  if (e.style.display == "block") e.style.display = "none";
-  else e.style.display = "block";
-}
 function showThreeButtons() {
- 
   document.getElementsByClassName("btn-secondary")[0].style.display = "block";
   document.getElementsByClassName("btn-secondary")[1].style.display = "block";
   document.getElementsByClassName("btn-secondary")[2].style.display = "block";
-
+  document.getElementsByClassName("btn-secondary")[3].style.display = "block";
 }
 function hideText() {
   document.getElementById("msg").style.display = "none";
 }
-function hideButton() {
-  document.getElementById("Enter").style.display = "none";
-}
-function showTime() {
-  document.getElementById("curr_time").style.display = "block";
-}
-function hideTime() {
+function hideButton() {document.getElementById("Enter").style.display = "none";}
+function showTime() { document.getElementById("curr_time").style.display = "block";}
+function hideClock() {
   document.getElementById("curr_time").style.display = "none";
 }
 function showTimer() {
   document.getElementById("box_timer").style.display = "block";
 }
-
 function hideTimer() {
   document.getElementById("box_timer").style.display = "none";
-}
-
-function Timerbtn() {
-  document.getElementById("Clock").style.visibility = "hidden";
 }
 
 function update(k) {
@@ -68,8 +53,15 @@ function update(k) {
 let clockbtn = document.getElementById("Clock");
 let timation = document.getElementById("Timer");
 let getStarted = document.getElementById("Enter");
-let boxing = document.getElementById("msg");  
+let boxing = document.getElementById("msg");
+let StudyPeriod = document.getElementById("Studier");
 
+
+StudyPeriod.addEventListener("click",function(){
+    hideClock();
+    hideTimer();
+
+});
 
 getStarted.addEventListener("click", function () {
   slideUp("box");
@@ -81,10 +73,10 @@ getStarted.addEventListener("click", function () {
 });
 
 timation.addEventListener("click", function () {
-  hideTime();
+  hideClock();
   showTimer();
 });
 clockbtn.addEventListener("click", function () {
   hideTimer();
-  showTime(); 
+  showTime();
 });

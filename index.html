@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="planner.css" />
   </head>
 
   <body>
@@ -27,11 +28,15 @@
     <!--Display time-->
 
     <div id="curr_time"></div>
+
+    <!--Navigation bar -->
     <div class="btn-group" role="group" aria-label="Basic example">
       <button type="button" id="Clock" class="btn btn-secondary">Clock</button>
-      <button type="button" id = "Calender" class="btn btn-secondary">Calender</button>
+      <button type="button" id="Calender" class="btn btn-secondary">Calender</button>
       <button type="button" id="Timer" class="btn btn-secondary">Timer</button>
+      <button type="button" id="Studier" class="btn btn-secondary">Study</button>
     </div>
+    <!--End of Navigation bar -->
 
     <!--End of Display time-->
 
@@ -49,10 +54,35 @@
       <h1 id="timing">00 : 00 . 000</h1>
     </div>
     <!--End of StopWatch-->
+
+    <!--Start of Calender-->
+    <div id="schedule">
+      <div class="days">
+        <div class="day_item">Mon</div>
+        <div class="day_item">Tue</div>
+        <div class="day_item">Wed</div>
+        <div class="day_item">Thu</div>
+        <div class="day_item">Fri</div>
+        <div class="day_item">Sat</div>
+        <div class="day_item">Sun</div>
+      </div>
+    </div>
   </body>
 
-  <!---->
+  <!--End of calender-->
+
+  <!--START OF STUDY TIMER-->
+  <div class = "production">
+    <input></input>
+
+
+  </div> 
+  <!--END OF STUDY TIMER-->
+
+
   <script src="js/time.js"></script>
   <script src="js/stopwatch.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/study.js"></script>
+
 </html>

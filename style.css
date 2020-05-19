@@ -23,9 +23,8 @@ body {
   height: 50px;
   width: 220px;
   position: relative;
-  font-family: "ariel" sans-serif;
+  font-family: "Orbitron" sans-serif;
   border: 1px;
-  color: black;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -81,15 +80,15 @@ body {
 #timing {
   top: -50px;
   position: relative;
+  font-size: 60px;
 }
 #curr_time {
   font-family: "Orbitron", sans-serif;
   color: #6640f2 /*#66ff99*/;
-  font-size: 56px;
+  font-size: 80px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  /*visibility: hidden;*/
   position: absolute;
   left: 50%;
   top: 50%;
